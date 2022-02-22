@@ -5,13 +5,3 @@ machdep.cpu.brand_string: Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz
 machdep.cpu.cache.linesize: 64
 machdep.cpu.cache.L2_associativity: 8
 machdep.cpu.cache.size: 256
-
-       0 0.10000000E+01       Infinity
-       1 0.10000000E+02       Infinity
-       2 0.10000000E+03       Infinity
-       3 0.10000000E+04 0.20971520E+06
-       4 0.10000000E+05 0.22671914E+06
-       5 0.10000000E+06 0.19599551E+06
-       6 0.10000000E+07 0.12062997E+06
-       7 0.10000000E+08 0.85667099E+05
-       8 0.10000000E+09 0.10206473E+05

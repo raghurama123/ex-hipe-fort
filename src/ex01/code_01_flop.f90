@@ -40,7 +40,7 @@ program calc_mflops
   
     deallocate(A, B, C, D)
   
-    write(*,'(i8, 2e15.8)') M, real(N,dp), MFLOPS
+    write(*,'(i8, 2e16.8)') M, real(N,dp), MFLOPS
 
   enddo
   
