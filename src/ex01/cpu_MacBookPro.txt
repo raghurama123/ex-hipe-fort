@@ -1,7 +1,0 @@
-machdep.cpu.max_basic: 13
-machdep.cpu.max_ext: 2147483656
-machdep.cpu.vendor: GenuineIntel
-machdep.cpu.brand_string: Intel(R) Core(TM) i7-4870HQ CPU @ 2.50GHz
-machdep.cpu.cache.linesize: 64
-machdep.cpu.cache.L2_associativity: 8
-machdep.cpu.cache.size: 256

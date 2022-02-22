@@ -3,10 +3,12 @@
 
 program calc_mflops
 
+  use iso_fortran_env, only: int64
+
   implicit none
 
   integer, parameter               :: dp = kind(1.0d0)
-  integer                          :: M, N, R
+  integer(int64)                   :: M, N, R
   real(dp), allocatable            :: A(:), B(:), C(:), D(:)
   real(dp)                         :: S, E, MFLOPS
   integer                          :: i, j
@@ -40,7 +42,7 @@ program calc_mflops
   
     deallocate(A, B, C, D)
   
-    write(*,'(i8, 2e16.8)') M, real(N,dp), MFLOPS
+    write(*,'(e16.8,a,e16.8)') real(N,dp), ',', MFLOPS
 
   enddo
   
@@ -58,6 +60,6 @@ subroutine get_walltime(wctime)
 
   call system_clock(tcount, trate)
 
-  wctime = real(tcount, dp) / trate
+  wctime = real(tcount, dp) / real(trate, dp)
 
 end subroutine get_walltime
